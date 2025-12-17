@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8f83b970e763b190e22025faa5d733e1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8f83b970e763b190e22025faa5d733e1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8f83b970e763b190e22025faa5d733e1 = L.map(
+                "map_8f83b970e763b190e22025faa5d733e1",
+                {
+                    center: [24.161259, 120.631192],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_981b453a8734c318886fbc048001d27e = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_981b453a8734c318886fbc048001d27e.addTo(map_8f83b970e763b190e22025faa5d733e1);
+        
+    
+            var marker_43d8f1f2c4ebf1ef5b86c62cb368ace8 = L.marker(
+                [24.161259, 120.631192],
+                {
+}
+            ).addTo(map_8f83b970e763b190e22025faa5d733e1);
+        
+    
+        var popup_b8010023737d3fc964f6eb6d2eb75d2f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_46179bbe6c4929c6eb41308ba442cdc2 = $(`<div id="html_46179bbe6c4929c6eb41308ba442cdc2" style="width: 100.0%; height: 100.0%;">site</div>`)[0];
+                popup_b8010023737d3fc964f6eb6d2eb75d2f.setContent(html_46179bbe6c4929c6eb41308ba442cdc2);
+            
+        
+
+        marker_43d8f1f2c4ebf1ef5b86c62cb368ace8.bindPopup(popup_b8010023737d3fc964f6eb6d2eb75d2f)
+        ;
+
+        
+    
+    
+            marker_43d8f1f2c4ebf1ef5b86c62cb368ace8.bindTooltip(
+                `<div>
+                     site
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            tile_layer_981b453a8734c318886fbc048001d27e.addTo(map_8f83b970e763b190e22025faa5d733e1);
+        
+    
+            var circle_marker_e277ba3cc6b47d4d45d94b7f04fe558a = L.circleMarker(
+                [24.189132, 120.70864],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.3262525954680875, "stroke": true, "weight": 3}
+            ).addTo(map_8f83b970e763b190e22025faa5d733e1);
+        
+    
+        var popup_408d5bdcfafa7e2709976895348743c5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b27f327c224ac3d538e4b34df3cefbc3 = $(`<div id="html_b27f327c224ac3d538e4b34df3cefbc3" style="width: 100.0%; height: 100.0%;">北屯總站<br>數值: 21818</div>`)[0];
+                popup_408d5bdcfafa7e2709976895348743c5.setContent(html_b27f327c224ac3d538e4b34df3cefbc3);
+            
+        
+
+        circle_marker_e277ba3cc6b47d4d45d94b7f04fe558a.bindPopup(popup_408d5bdcfafa7e2709976895348743c5)
+        ;
+
+        
+    
+    
+            circle_marker_e277ba3cc6b47d4d45d94b7f04fe558a.bindTooltip(
+                `<div>
+                     北屯總站
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1a91458a49ac33a923922b6ada2f4dac = L.circleMarker(
+                [24.182289, 120.707294],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.869468267581475, "stroke": true, "weight": 3}
+            ).addTo(map_8f83b970e763b190e22025faa5d733e1);
+        
+    
+        var popup_561c57770fac448507e8143e92bd0e64 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_376e39edb26fd572c869c601b914468a = $(`<div id="html_376e39edb26fd572c869c601b914468a" style="width: 100.0%; height: 100.0%;">舊社<br>數值: 30414</div>`)[0];
+                popup_561c57770fac448507e8143e92bd0e64.setContent(html_376e39edb26fd572c869c601b914468a);
+            
+        
+
+        circle_marker_1a91458a49ac33a923922b6ada2f4dac.bindPopup(popup_561c57770fac448507e8143e92bd0e64)
+        ;
+
+        
+    
+    
+            circle_marker_1a91458a49ac33a923922b6ada2f4dac.bindTooltip(
+                `<div>
+                     舊社
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_568e7c2d5398dad2625620d3db34f043 = L.circleMarker(
+                [24.180807, 120.70145],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.003827751196173, "stroke": true, "weight": 3}
+            ).addTo(map_8f83b970e763b190e22025faa5d733e1);
+        
+    
+        var popup_f6391667b9d643e1b67d8fde6c93843e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_88370d6d9aea54f92cc5453afacbd05d = $(`<div id="html_88370d6d9aea54f92cc5453afacbd05d" style="width: 100.0%; height: 100.0%;">松竹<br>數值: 80013</div>`)[0];
+                popup_f6391667b9d643e1b67d8fde6c93843e.setContent(html_88370d6d9aea54f92cc5453afacbd05d);
+            
+        
+
+        circle_marker_568e7c2d5398dad2625620d3db34f043.bindPopup(popup_f6391667b9d643e1b67d8fde6c93843e)
+        ;
+
+        
+    
+    
+            circle_marker_568e7c2d5398dad2625620d3db34f043.bindTooltip(
+                `<div>
+                     松竹
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_555a9426d39112f3ae330ab47b953a66 = L.circleMarker(
+                [24.171243, 120.693295],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.3099124311636725, "stroke": true, "weight": 3}
+            ).addTo(map_8f83b970e763b190e22025faa5d733e1);
+        
+    
+        var popup_1eba42e3f63d18d48db38398908675cd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a22660d0325ceedcb756e4a73d906c57 = $(`<div id="html_a22660d0325ceedcb756e4a73d906c57" style="width: 100.0%; height: 100.0%;">四維國小<br>數值: 53208</div>`)[0];
+                popup_1eba42e3f63d18d48db38398908675cd.setContent(html_a22660d0325ceedcb756e4a73d906c57);
+            
+        
+
+        circle_marker_555a9426d39112f3ae330ab47b953a66.bindPopup(popup_1eba42e3f63d18d48db38398908675cd)
+        ;
+
+        
+    
+    
+            circle_marker_555a9426d39112f3ae330ab47b953a66.bindTooltip(
+                `<div>
+                     四維國小
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_594f44d5c20427bd0ced387d20f85f51 = L.circleMarker(
+                [24.172194, 120.684869],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.699972916854744, "stroke": true, "weight": 3}
+            ).addTo(map_8f83b970e763b190e22025faa5d733e1);
+        
+    
+        var popup_b790a72457b40a53460c520a6beaf546 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_66f24ec9efccb2492c890e79b2c80a61 = $(`<div id="html_66f24ec9efccb2492c890e79b2c80a61" style="width: 100.0%; height: 100.0%;">文心崇德<br>數值: 91029</div>`)[0];
+                popup_b790a72457b40a53460c520a6beaf546.setContent(html_66f24ec9efccb2492c890e79b2c80a61);
+            
+        
+
+        circle_marker_594f44d5c20427bd0ced387d20f85f51.bindPopup(popup_b790a72457b40a53460c520a6beaf546)
+        ;
+
+        
+    
+    
+            circle_marker_594f44d5c20427bd0ced387d20f85f51.bindTooltip(
+                `<div>
+                     文心崇德
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_44e110d1db11a013403b97804a8d46be = L.circleMarker(
+                [24.173682, 120.670599],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.321819987361199, "stroke": true, "weight": 3}
+            ).addTo(map_8f83b970e763b190e22025faa5d733e1);
+        
+    
+        var popup_fe8482403502bc8b798fdedea6d67c1b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a3ce8e35133d1035479315561e9b9304 = $(`<div id="html_a3ce8e35133d1035479315561e9b9304" style="width: 100.0%; height: 100.0%;">文心中清<br>數值: 85045</div>`)[0];
+                popup_fe8482403502bc8b798fdedea6d67c1b.setContent(html_a3ce8e35133d1035479315561e9b9304);
+            
+        
+
+        circle_marker_44e110d1db11a013403b97804a8d46be.bindPopup(popup_fe8482403502bc8b798fdedea6d67c1b)
+        ;
+
+        
+    
+    
+            circle_marker_44e110d1db11a013403b97804a8d46be.bindTooltip(
+                `<div>
+                     文心中清
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0288a2ab7804d0b49672b47a29f6bc7e = L.circleMarker(
+                [24.171416, 120.660455],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.473648099665974, "stroke": true, "weight": 3}
+            ).addTo(map_8f83b970e763b190e22025faa5d733e1);
+        
+    
+        var popup_21a6aabdd7c0c1652f5af43fd330c654 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9bfab3bc2fdcdb00da0f0aa00e135e17 = $(`<div id="html_9bfab3bc2fdcdb00da0f0aa00e135e17" style="width: 100.0%; height: 100.0%;">文華高中<br>數值: 55799</div>`)[0];
+                popup_21a6aabdd7c0c1652f5af43fd330c654.setContent(html_9bfab3bc2fdcdb00da0f0aa00e135e17);
+            
+        
+
+        circle_marker_0288a2ab7804d0b49672b47a29f6bc7e.bindPopup(popup_21a6aabdd7c0c1652f5af43fd330c654)
+        ;
+
+        
+    
+    
+            circle_marker_0288a2ab7804d0b49672b47a29f6bc7e.bindTooltip(
+                `<div>
+                     文華高中
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d3bb176524cd1aba3a46c6f40e96c802 = L.circleMarker(
+                [24.167636, 120.653674],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.040010833258102, "stroke": true, "weight": 3}
+            ).addTo(map_8f83b970e763b190e22025faa5d733e1);
+        
+    
+        var popup_48120af3f63fba31d70c36158e7a272d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a37285275e812303040bd56ade2ddb17 = $(`<div id="html_a37285275e812303040bd56ade2ddb17" style="width: 100.0%; height: 100.0%;">文心櫻花<br>數值: 48937</div>`)[0];
+                popup_48120af3f63fba31d70c36158e7a272d.setContent(html_a37285275e812303040bd56ade2ddb17);
+            
+        
+
+        circle_marker_d3bb176524cd1aba3a46c6f40e96c802.bindPopup(popup_48120af3f63fba31d70c36158e7a272d)
+        ;
+
+        
+    
+    
+            circle_marker_d3bb176524cd1aba3a46c6f40e96c802.bindTooltip(
+                `<div>
+                     文心櫻花
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4bf2e26e25c99fb816c643cd603107f2 = L.circleMarker(
+                [24.16199, 120.649035],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.832734494899341, "stroke": true, "weight": 3}
+            ).addTo(map_8f83b970e763b190e22025faa5d733e1);
+        
+    
+        var popup_fe5096d658f801ba56e8ab74964b8fb4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8af0bf4f402dcc7ab3774eaa88a26ab5 = $(`<div id="html_8af0bf4f402dcc7ab3774eaa88a26ab5" style="width: 100.0%; height: 100.0%;">市政府<br>數值: 156427</div>`)[0];
+                popup_fe5096d658f801ba56e8ab74964b8fb4.setContent(html_8af0bf4f402dcc7ab3774eaa88a26ab5);
+            
+        
+
+        circle_marker_4bf2e26e25c99fb816c643cd603107f2.bindPopup(popup_fe5096d658f801ba56e8ab74964b8fb4)
+        ;
+
+        
+    
+    
+            circle_marker_4bf2e26e25c99fb816c643cd603107f2.bindTooltip(
+                `<div>
+                     市政府
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0d42f53fe0a481e5ea32da1982ef307d = L.circleMarker(
+                [24.153113, 120.646687],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.946068430080347, "stroke": true, "weight": 3}
+            ).addTo(map_8f83b970e763b190e22025faa5d733e1);
+        
+    
+        var popup_0a951e4da24036d773ef44161da61709 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_db93b48b4cdea0006c5e73249e5d92e6 = $(`<div id="html_db93b48b4cdea0006c5e73249e5d92e6" style="width: 100.0%; height: 100.0%;">水安宮<br>數值: 79099</div>`)[0];
+                popup_0a951e4da24036d773ef44161da61709.setContent(html_db93b48b4cdea0006c5e73249e5d92e6);
+            
+        
+
+        circle_marker_0d42f53fe0a481e5ea32da1982ef307d.bindPopup(popup_0a951e4da24036d773ef44161da61709)
+        ;
+
+        
+    
+    
+            circle_marker_0d42f53fe0a481e5ea32da1982ef307d.bindTooltip(
+                `<div>
+                     水安宮
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0fc7dd6a155dfc8ea2c35de5eac1e231 = L.circleMarker(
+                [24.1454, 120.6466],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.098763203033313, "stroke": true, "weight": 3}
+            ).addTo(map_8f83b970e763b190e22025faa5d733e1);
+        
+    
+        var popup_d3b11dcf4d7533bfaed6429a1fd418ed = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b7c6aa3c929a8ee8267851fd85ef3dcf = $(`<div id="html_b7c6aa3c929a8ee8267851fd85ef3dcf" style="width: 100.0%; height: 100.0%;">文心森林公園<br>數值: 65691</div>`)[0];
+                popup_d3b11dcf4d7533bfaed6429a1fd418ed.setContent(html_b7c6aa3c929a8ee8267851fd85ef3dcf);
+            
+        
+
+        circle_marker_0fc7dd6a155dfc8ea2c35de5eac1e231.bindPopup(popup_d3b11dcf4d7533bfaed6429a1fd418ed)
+        ;
+
+        
+    
+    
+            circle_marker_0fc7dd6a155dfc8ea2c35de5eac1e231.bindTooltip(
+                `<div>
+                     文心森林公園
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e115e464deaae948c06233b40aed1cef = L.circleMarker(
+                [24.1405, 120.6466],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.14617676266137, "stroke": true, "weight": 3}
+            ).addTo(map_8f83b970e763b190e22025faa5d733e1);
+        
+    
+        var popup_8b50a7766b2a0b1122553fbc404ac6ad = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9841aadb9bdb33b99fb3d983c3f26090 = $(`<div id="html_9841aadb9bdb33b99fb3d983c3f26090" style="width: 100.0%; height: 100.0%;">南屯<br>數值: 50617</div>`)[0];
+                popup_8b50a7766b2a0b1122553fbc404ac6ad.setContent(html_9841aadb9bdb33b99fb3d983c3f26090);
+            
+        
+
+        circle_marker_e115e464deaae948c06233b40aed1cef.bindPopup(popup_8b50a7766b2a0b1122553fbc404ac6ad)
+        ;
+
+        
+    
+    
+            circle_marker_e115e464deaae948c06233b40aed1cef.bindTooltip(
+                `<div>
+                     南屯
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_19763af64a0126ddaf58a2ce3e012b61 = L.circleMarker(
+                [24.132606, 120.64635],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.263509975625169, "stroke": true, "weight": 3}
+            ).addTo(map_8f83b970e763b190e22025faa5d733e1);
+        
+    
+        var popup_3e3ffe83d2a4489e0d659dec1560e776 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_67a22e0010674b8160ff5f28f5fd17bb = $(`<div id="html_67a22e0010674b8160ff5f28f5fd17bb" style="width: 100.0%; height: 100.0%;">豐樂公園<br>數值: 68298</div>`)[0];
+                popup_3e3ffe83d2a4489e0d659dec1560e776.setContent(html_67a22e0010674b8160ff5f28f5fd17bb);
+            
+        
+
+        circle_marker_19763af64a0126ddaf58a2ce3e012b61.bindPopup(popup_3e3ffe83d2a4489e0d659dec1560e776)
+        ;
+
+        
+    
+    
+            circle_marker_19763af64a0126ddaf58a2ce3e012b61.bindTooltip(
+                `<div>
+                     豐樂公園
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_84bf5cb1caaebf6dbc9f6846cb38f7d6 = L.circleMarker(
+                [24.1191, 120.6476],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.255339893472962, "stroke": true, "weight": 3}
+            ).addTo(map_8f83b970e763b190e22025faa5d733e1);
+        
+    
+        var popup_c6f9ef1339dd0032e7eea4813ac9f003 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_83b6e7b462bc041ef91c46cea29c280a = $(`<div id="html_83b6e7b462bc041ef91c46cea29c280a" style="width: 100.0%; height: 100.0%;">大慶<br>數值: 83993</div>`)[0];
+                popup_c6f9ef1339dd0032e7eea4813ac9f003.setContent(html_83b6e7b462bc041ef91c46cea29c280a);
+            
+        
+
+        circle_marker_84bf5cb1caaebf6dbc9f6846cb38f7d6.bindPopup(popup_c6f9ef1339dd0032e7eea4813ac9f003)
+        ;
+
+        
+    
+    
+            circle_marker_84bf5cb1caaebf6dbc9f6846cb38f7d6.bindTooltip(
+                `<div>
+                     大慶
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c607ad413c64f3458c166b58dc9d787b = L.circleMarker(
+                [24.1145, 120.6401],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(map_8f83b970e763b190e22025faa5d733e1);
+        
+    
+        var popup_77c396f376d08f754b478427d6fdf298 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_919ecbfea9e7ebdb9ffc5a4e3687488a = $(`<div id="html_919ecbfea9e7ebdb9ffc5a4e3687488a" style="width: 100.0%; height: 100.0%;">九張犁<br>數值: 831</div>`)[0];
+                popup_77c396f376d08f754b478427d6fdf298.setContent(html_919ecbfea9e7ebdb9ffc5a4e3687488a);
+            
+        
+
+        circle_marker_c607ad413c64f3458c166b58dc9d787b.bindPopup(popup_77c396f376d08f754b478427d6fdf298)
+        ;
+
+        
+    
+    
+            circle_marker_c607ad413c64f3458c166b58dc9d787b.bindTooltip(
+                `<div>
+                     九張犁
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_90c39531604a0c6649c357f7580f1741 = L.circleMarker(
+                [24.111049, 120.634481],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.092543107339532, "stroke": true, "weight": 3}
+            ).addTo(map_8f83b970e763b190e22025faa5d733e1);
+        
+    
+        var popup_c1f4c007b239bb68492cd6bf77d597c5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9e544ae7441d0c84aa92c5e19d41b7e9 = $(`<div id="html_9e544ae7441d0c84aa92c5e19d41b7e9" style="width: 100.0%; height: 100.0%;">九德<br>數值: 33944</div>`)[0];
+                popup_c1f4c007b239bb68492cd6bf77d597c5.setContent(html_9e544ae7441d0c84aa92c5e19d41b7e9);
+            
+        
+
+        circle_marker_90c39531604a0c6649c357f7580f1741.bindPopup(popup_c1f4c007b239bb68492cd6bf77d597c5)
+        ;
+
+        
+    
+    
+            circle_marker_90c39531604a0c6649c357f7580f1741.bindTooltip(
+                `<div>
+                     九德
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bfe19c331d29c548bcb4f1e34a549358 = L.circleMarker(
+                [24.1089, 120.6249],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.1101290963257195, "stroke": true, "weight": 3}
+            ).addTo(map_8f83b970e763b190e22025faa5d733e1);
+        
+    
+        var popup_284bc7ae1cec3a05fb281b62561923cb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c174647cfff8330cdf9f1b1871ffb63e = $(`<div id="html_c174647cfff8330cdf9f1b1871ffb63e" style="width: 100.0%; height: 100.0%;">烏日<br>數值: 18398</div>`)[0];
+                popup_284bc7ae1cec3a05fb281b62561923cb.setContent(html_c174647cfff8330cdf9f1b1871ffb63e);
+            
+        
+
+        circle_marker_bfe19c331d29c548bcb4f1e34a549358.bindPopup(popup_284bc7ae1cec3a05fb281b62561923cb)
+        ;
+
+        
+    
+    
+            circle_marker_bfe19c331d29c548bcb4f1e34a549358.bindTooltip(
+                `<div>
+                     烏日
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7df69807a74fa108454e5e11964e2de0 = L.circleMarker(
+                [24.110119, 120.614053],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.0, "stroke": true, "weight": 3}
+            ).addTo(map_8f83b970e763b190e22025faa5d733e1);
+        
+    
+        var popup_d9c3ed32409ece019373a587a0bf0e50 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5a862e697974eccad04639e13340ddc6 = $(`<div id="html_5a862e697974eccad04639e13340ddc6" style="width: 100.0%; height: 100.0%;">高鐵臺中站<br>數值: 222371</div>`)[0];
+                popup_d9c3ed32409ece019373a587a0bf0e50.setContent(html_5a862e697974eccad04639e13340ddc6);
+            
+        
+
+        circle_marker_7df69807a74fa108454e5e11964e2de0.bindPopup(popup_d9c3ed32409ece019373a587a0bf0e50)
+        ;
+
+        
+    
+    
+            circle_marker_7df69807a74fa108454e5e11964e2de0.bindTooltip(
+                `<div>
+                     高鐵臺中站
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var layer_control_e757effb559439e11fd5bbacfffde93b_layers = {
+                base_layers : {
+                    "cartodbdarkmatter" : tile_layer_981b453a8734c318886fbc048001d27e,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_e757effb559439e11fd5bbacfffde93b = L.control.layers(
+                layer_control_e757effb559439e11fd5bbacfffde93b_layers.base_layers,
+                layer_control_e757effb559439e11fd5bbacfffde93b_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_8f83b970e763b190e22025faa5d733e1);
+
+        
+    
+            tile_layer_981b453a8734c318886fbc048001d27e.addTo(map_8f83b970e763b190e22025faa5d733e1);
+        
+</script>
+</html>
