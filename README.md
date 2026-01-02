@@ -34,4 +34,4 @@ AI:Copilot(編寫程式)+Gemini(用於蒐集更多資訊)
 每一個景點皆有一個圖層，顯示其直徑1km內的客運路線，可藉由開關圖層比對各景點的客運交通情形
 ![網頁展示圖](image/image-2.png)
 ![網頁展示圖](image/image-3.png)<br>
-互動式網頁連結-->[1km_map.html](http://127.0.0.1:5500/site-analysis/html/tourist_spots_map.html)
+互動式網頁連結-->[tourist_spots_map.html](http://127.0.0.1:5500/site-analysis/html/tourist_spots_map.html)
