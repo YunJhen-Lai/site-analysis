@@ -1,40 +1,37 @@
-## 介紹
-### 初步構想
-可視化人流、交通大數據
-不同社會階級的人在城市中的路線
+# Final Project
+## 簡介
+<<設計前期-基地交通分析的可視化工具>>
+由於預計要作轉運站設計，所以主要蒐集的資訊為基地周遭的大眾運輸、尤其是客運/公車等等的路線、人次資訊。
 
-畢業設計:轉運站 關注筏子溪東西兩側市民的互動情形 
-    -台中七期 & 工業區+農業區
+### 過程
+蒐集資訊、過濾並整合成可用的資訊檔案、建立Folium map互動式地圖
+資訊主要來源:台中市政府資訊開放平臺、TDX運輸資料流通服務
+AI:Copilot(編寫程式)+Gemini(用於蒐集更多資訊)
 
-希望能輔助畢業設計的分析階段
+### Github資料夾說明
+在site-analysis資料夾裡
+有以下資料夾
+1.code--存放製作出互動網頁的jupyter notebook以及python檔案
+2.html--存放基地分析的互動式網頁
+3.data--資訊(主要是json檔案)以及用以蒐集資訊的pyhon檔案，但因為檔案過大所以在github忽略上傳此資料夾
 
-![alt.citysection](assets/citysection+plan2.jpg)
+## 成果分享
+成果主要以互動式網頁的形式呈現，可以放大縮小地圖範圍
+並可以用鼠標點擊交通站點已顯示名稱資訊等
 
-### 資料蒐集困難
-如何得知人流?如何得知人流數據中屬於哪些階級
+### 1.捷運綠線
+定位捷運站點，並運用圓圈半徑呈現各站人次數量的比例關係
+![網頁展示圖](../image/image.png)
+[map_mrt.html](http://127.0.0.1:5500/site-analysis/html/map_mrt.html)
 
----
+### 2.基地直徑1km內的客運站點路線
+抓取設站於基地直徑1km內的客運路線，以分析基地使用者能以步行輕鬆搭乘哪些客運路線
+![網頁展示圖](../image/image-1.png)
+[1km_map.html](http://127.0.0.1:5500/site-analysis/html/1km_map.html)
 
-## 案例參考
-
-### A.城市交通大數據分析與可視化
-
-[reference1](https://cloud.tencent.com/developer/article/2425302)
-
-![示意圖](https://developer.qcloudimg.com/http-save/yehe-10221084/c9b2385ddbe9c9c0c8cd12b17ef32a22.png)
-
-### B.Network Analysis
-
-[reference2](https://www.agsrt.com/post/mastering-network-analysis-using-python-gisblogs-agsrt)
-
-
-
-![示意圖](https://static.wixstatic.com/media/5d1736_2a590d9704be49448ca6bdd9bb2c1306~mv2.jpg/v1/fill/w_925,h_975,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/5d1736_2a590d9704be49448ca6bdd9bb2c1306~mv2.jpg)
-
-### C.模擬交通情形
-
-模擬畢設中轉運站建築的客運車流、自行車、行人三者的關係
-
-[reference3](https://blog.csdn.net/shebao3333/article/details/121188395)
-
-![示意圖](https://i-blog.csdnimg.cn/blog_migrate/ad4dc26e5f602d1e4d634f1b0069a22e.png)
+### 3.基地直徑1km內的客運站點路線
+將台中2025統計觀光人次前十名的景點定位，並運用圓圈半徑呈現各站人次數量的比例關係
+每一個景點皆有一個圖層，顯示其直徑1km內的客運路線，可藉由開關圖層比對各景點的客運交通情形
+![網頁展示圖](../image/image-2.png)
+![網頁展示圖](../image/image-3.png)
+[1km_map.html](http://127.0.0.1:5500/site-analysis/html/tourist_spots_map.html)
