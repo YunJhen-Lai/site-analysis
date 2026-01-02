@@ -14,6 +14,7 @@ AI:Copilot(編寫程式)+Gemini(用於蒐集更多資訊)
 1.code--存放製作出互動網頁的jupyter notebook以及python檔案
 2.html--存放基地分析的互動式網頁
 3.data--資訊(主要是json檔案)以及用以蒐集資訊的pyhon檔案，但因為檔案過大所以在github忽略上傳此資料夾
+4.image--用來存放readme的網頁展示圖，可忽略此資料夾
 
 ## 成果分享
 成果主要以互動式網頁的形式呈現，可以放大縮小地圖範圍
@@ -21,17 +22,18 @@ AI:Copilot(編寫程式)+Gemini(用於蒐集更多資訊)
 
 ### 1.捷運綠線
 定位捷運站點，並運用圓圈半徑呈現各站人次數量的比例關係
-![網頁展示圖](../image/image.png)
+![網頁展示圖](image/image.png)
+>
 [map_mrt.html](http://127.0.0.1:5500/site-analysis/html/map_mrt.html)
 
 ### 2.基地直徑1km內的客運站點路線
-抓取設站於基地直徑1km內的客運路線，以分析基地使用者能以步行輕鬆搭乘哪些客運路線
-![網頁展示圖](../image/image-1.png)
+抓取設站於基地直徑1km內的客運路線，以分析基地使用者能以步行輕鬆搭乘哪些客運路線<br>
+![網頁展示圖](image/image-1.png)<br>
 [1km_map.html](http://127.0.0.1:5500/site-analysis/html/1km_map.html)
 
 ### 3.基地直徑1km內的客運站點路線
-將台中2025統計觀光人次前十名的景點定位，並運用圓圈半徑呈現各站人次數量的比例關係
+將台中2025統計觀光人次前十名的景點定位，並運用圓圈半徑呈現各站人次數量的比例關係<br>
 每一個景點皆有一個圖層，顯示其直徑1km內的客運路線，可藉由開關圖層比對各景點的客運交通情形
-![網頁展示圖](../image/image-2.png)
-![網頁展示圖](../image/image-3.png)
+![網頁展示圖](image/image-2.png)
+![網頁展示圖](image/image-3.png)<br>
 [1km_map.html](http://127.0.0.1:5500/site-analysis/html/tourist_spots_map.html)
